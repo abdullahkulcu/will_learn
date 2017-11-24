@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+    <TextView
+        android:layout_margin="15dp"
+        android:text="WILL LEARN"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/wrongWord"
+        android:layout_margin="15dp"
+        android:layout_gravity="right"
+        android:background="#00000000"
+        android:text="Wrong Word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/qeustionText"
+            android:text="WORD"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/startAudio"
+            android:layout_gravity="center"
+            android:background="@drawable/audio"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/answer1"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:cpb_textComplete="OK"
+            app:cpb_textError="Wrong"
+            app:cpb_textIdle="Answer" />
+        <com.dd.CircularProgressButton
+            android:id="@+id/answer2"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:cpb_textComplete="OK"
+            app:cpb_textError="Wrong"
+            app:cpb_textIdle="Answer" />
+        <com.dd.CircularProgressButton
+            android:id="@+id/answer3"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:cpb_textComplete="OK"
+            app:cpb_textError="Wrong"
+            app:cpb_textIdle="Answer" />
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/answer4"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:cpb_textComplete="OK"
+            app:cpb_textError="Wrong"
+            app:cpb_textIdle="Answer" />
+    </LinearLayout>
+
+</FrameLayout>
